@@ -35,3 +35,9 @@ add_deps
 cp -r -v ../src .
 cargo run
 popd
+for i in {9..0}
+do
+	sleep 1
+	printf "T minus ${i}\n"
+done
+rm -rfv "number_game"
